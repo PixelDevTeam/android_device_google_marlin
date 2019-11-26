@@ -238,7 +238,7 @@ PRODUCT_PACKAGES += \
 
 # DRM HAL
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.2-service.clearkey
+    android.hardware.drm@1.3-service.clearkey
 
 # Sensors
 PRODUCT_PACKAGES += \
