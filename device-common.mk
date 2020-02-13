@@ -22,6 +22,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 25
+# Enforce privapp-permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_SOONG_NAMESPACES += \
     device/google/marlin \
@@ -35,6 +37,10 @@ DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
+
+# Disable privapp-permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=disable
 
 # Input device files
 PRODUCT_COPY_FILES += \
