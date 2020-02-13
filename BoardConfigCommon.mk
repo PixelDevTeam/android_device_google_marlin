@@ -67,6 +67,10 @@ AUDIO_FEATURE_ENABLED_SND_MONITOR := true
 
 -include $(QCPATH)/common/msm8996/BoardConfigVendor.mk
 
+# Disable vbmeta
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+
 # Some framework code requires this to enable BT
 BOARD_HAVE_BLUETOOTH := true
 BOARD_USES_WIPOWER := true
