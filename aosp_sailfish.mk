@@ -21,6 +21,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+# Inherit Evolution-X configs
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Device specific properties
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES_EVO := true
+TARGET_GAPPS_ARCH := arm64
+
 PRODUCT_NAME := aosp_sailfish
 PRODUCT_DEVICE := sailfish
 PRODUCT_BRAND := Android
