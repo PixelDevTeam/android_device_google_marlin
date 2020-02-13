@@ -4,6 +4,8 @@
 # Fix inline kernel building
 BUILD_BROKEN_PHONY_TARGETS := true
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_SOURCE := kernel/google/marlin
 TARGET_KERNEL_CONFIG := marlin_defconfig
