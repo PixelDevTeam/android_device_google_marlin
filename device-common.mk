@@ -21,12 +21,6 @@
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/google/marlin-kernel/Image.lz4-dtb
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 PRODUCT_SHIPPING_API_LEVEL := 25
 
 PRODUCT_SOONG_NAMESPACES += \
@@ -35,7 +29,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
     frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
 
 DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay
