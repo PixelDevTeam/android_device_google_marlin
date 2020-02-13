@@ -3,6 +3,9 @@
 # Product-specific compile-time definitions
 #
 
+# Include common configs
+-include device/google/marlin/BoardConfigCommon.mk
+
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOOTLOADER_BOARD_NAME := marlin
 TARGET_BOARD_INFO_FILE := device/google/marlin/marlin/board-info.txt
