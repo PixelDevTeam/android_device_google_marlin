@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit Evolution-X configs
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/google_devices/sailfish/sailfish-vendor.mk)
+
 # Device specific properties
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOT_ANIMATION_RES_EVO := true
@@ -38,7 +40,6 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_COPY_FILES += device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.sailfish
 
 $(call inherit-product, device/google/marlin/device-sailfish.mk)
-$(call inherit-product-if-exists, vendor/google_devices/marlin/device-vendor-sailfish.mk)
 
 PRODUCT_PACKAGES += \
     Launcher3QuickStep \

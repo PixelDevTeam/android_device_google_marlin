@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit Evolution-X configs
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/google_devices/marlin/marlin-vendor.mk)
+
 # Device specific properties
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_BOOT_ANIMATION_RES_EVO := true
