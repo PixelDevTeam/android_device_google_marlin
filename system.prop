@@ -20,6 +20,8 @@ DEVICE_PROVISIONED=1
 ro.telephony.default_network=10
 
 dalvik.vm.heapsize=36m
+dalvik.vm.dex2oat64.enabled=true
+ro.sys.fw.dex2oat_thread_count=8
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 
