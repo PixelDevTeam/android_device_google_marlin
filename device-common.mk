@@ -153,6 +153,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += ro.hardware.power=marlin
 
+# Camers
+PRODUCT_PACKAGES += \
+    libmm-qcamera
+
 # Ramdisk
 # Copy common fstab to vendor
 PRODUCT_COPY_FILES += \
@@ -241,6 +245,18 @@ PRODUCT_COPY_FILES += \
 # Dumpstate HAL
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.0-service.marlin
+
+# DRM HAL
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.2-service.clearkey
+
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+# Tool
+PRODUCT_PACKAGES += \
+    libtinyxml
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
