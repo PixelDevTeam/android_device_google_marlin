@@ -35,7 +35,7 @@ TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_NAME := aosp_sailfish
 PRODUCT_DEVICE := sailfish
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel
 PRODUCT_MANUFACTURER := Google
 

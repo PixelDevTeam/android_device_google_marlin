@@ -35,7 +35,7 @@ TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_NAME := aosp_marlin
 PRODUCT_DEVICE := marlin
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 PRODUCT_MANUFACTURER := Google
 
