@@ -45,9 +45,7 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     WallpaperPicker
 
-
+# Device props
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    PRIVATE_BUILD_DESC="marlin-user 10 QP1A.191005.007.A1 5908163 release-keys"
-
-BUILD_FINGERPRINT="google/marlin/marlin:10/QP1A.191005.007.A1/5908163:user/release-keys"
+    BUILD_FINGERPRINT=google/taimen/taimen:10/QQ3A.200605.001/6392402:user/release-keys
