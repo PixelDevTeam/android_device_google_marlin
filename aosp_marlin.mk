@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit Evolution-X configs
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit device specific makefiles
+$(call inherit-product, device/google/marlin/device-marlin.mk)
 $(call inherit-product, vendor/google_devices/marlin/marlin-vendor.mk)
 
 # Device specific properties
@@ -36,15 +38,6 @@ PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := Pixel XL
 PRODUCT_MANUFACTURER := Google
-
-PRODUCT_COPY_FILES += device/google/marlin/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.marlin
-
-$(call inherit-product, device/google/marlin/device-marlin.mk)
-$(call inherit-product-if-exists, vendor/google_devices/marlin/device-vendor-marlin.mk)
-
-PRODUCT_PACKAGES += \
-    Launcher3QuickStep \
-    WallpaperPicker
 
 # Device props
 PRODUCT_BUILD_PROP_OVERRIDES += \
