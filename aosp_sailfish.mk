@@ -39,6 +39,9 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := Pixel
 PRODUCT_MANUFACTURER := Google
 
+# GMS client ID
+PRODUCT_GMS_CLIENTID_BASE := android-google
+
 # Device props
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
