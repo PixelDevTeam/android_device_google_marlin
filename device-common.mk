@@ -100,7 +100,6 @@ PRODUCT_PACKAGES += fs_config_files \
                     fs_config_dirs
 
 # Audio configuration
-USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_COPY_FILES += \
     device/google/marlin/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
     device/google/marlin/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -140,7 +139,6 @@ PRODUCT_PROPERTY_OVERRIDES += aaudio.hw_burst_min_usec=2000
 
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-service \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.contexthub@1.0-service \
     android.hardware.gnss@1.0-service \
@@ -187,20 +185,33 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     move_widevine_data.sh
 
-# Audio effects
+# Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio@5.0 \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.common@5.0 \
+    android.hardware.audio.common@5.0-util \
+    android.hardware.audio.effect@5.0 \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.2-service \
+    audio.a2dp.default \
+    audio.primary.msm8996 \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_amplifier.msm8996 \
+    sound_trigger.primary.msm8996 \
+    libaacwrapper \
+    libaudio-resampler \
+    libaudioroute \
+    libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
-    libqcompostprocbundle
-
-PRODUCT_PACKAGES += \
-    sound_trigger.primary.msm8996
-
-PRODUCT_PACKAGES += \
-    android.hardware.audio@5.0-impl:32 \
-    android.hardware.audio.effect@5.0-impl:32 \
-    android.hardware.soundtrigger@2.2-impl:32
+    libvolumelistener \
+    tinymix
 
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:32
