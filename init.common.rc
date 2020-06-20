@@ -35,6 +35,9 @@ on init
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
 
+    # disable thermal hotplug for thermal
+    write /sys/module/msm_thermal/core_control/enabled 0
+
     # Setup cpusets used by the VR services.
     mkdir /dev/cpuset/kernel 0750 root system
     write /dev/cpuset/kernel/cpus 0
