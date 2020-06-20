@@ -38,6 +38,12 @@ on init
     # disable thermal hotplug for thermal
     write /sys/module/msm_thermal/core_control/enabled 0
 
+    # bring back all cores
+    write /sys/devices/system/cpu/cpu0/online 1
+    write /sys/devices/system/cpu/cpu1/online 1
+    write /sys/devices/system/cpu/cpu2/online 1
+    write /sys/devices/system/cpu/cpu3/online 1
+
     # Setup cpusets used by the VR services.
     mkdir /dev/cpuset/kernel 0750 root system
     write /dev/cpuset/kernel/cpus 0
