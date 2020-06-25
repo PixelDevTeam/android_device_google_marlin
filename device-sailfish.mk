@@ -29,7 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += device/google/marlin/sailfish/overlay
 
 # display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=420
+    ro.sf.lcd_density=400
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
