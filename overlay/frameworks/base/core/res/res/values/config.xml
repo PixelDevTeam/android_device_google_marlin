@@ -489,6 +489,12 @@
      <!-- True if Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
+    <!-- Specify model in case of attestation failure due to misprovisioned device. -->
+    <string name="config_misprovisionedDeviceModel" translatable="false">Pixel</string>
+
+    <!-- Brand value for attestation of misprovisioned device. -->
+    <string name="config_misprovisionedBrandValue" translatable="false">htc</string>
+
     <!-- True if the firmware supports Wi-Fi link probing -->
     <bool name="config_wifi_link_probing_supported">true</bool>
 
