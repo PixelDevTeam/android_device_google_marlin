@@ -14,9 +14,6 @@ TARGET_KERNEL_CONFIG := LunarKernel_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 
-# Board
-TARGET_BOARD_AUTO := true
-
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 USE_XML_AUDIO_POLICY_CONF := 1
