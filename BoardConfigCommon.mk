@@ -4,6 +4,7 @@
 # Fix inline kernel building
 BUILD_BROKEN_PHONY_TARGETS := true
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
