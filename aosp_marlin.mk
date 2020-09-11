@@ -30,8 +30,6 @@ $(call inherit-product, vendor/google_devices/marlin/marlin-vendor.mk)
 
 # Device specific properties
 TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_NAME := aosp_marlin
 PRODUCT_DEVICE := marlin

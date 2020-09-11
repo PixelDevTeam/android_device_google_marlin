@@ -30,8 +30,6 @@ $(call inherit-product, vendor/google_devices/sailfish/sailfish-vendor.mk)
 
 # Device specific properties
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_GAPPS_ARCH := arm64
 
 PRODUCT_NAME := aosp_sailfish
 PRODUCT_DEVICE := sailfish
