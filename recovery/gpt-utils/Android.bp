@@ -13,7 +13,29 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
+cc_library {
+    name: "libgptutils",
+    vendor: true,
+    recovery_available: true,
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libz",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-macro-redefined",
+    ],
+    srcs: [
+        "gpt-utils.cpp",
+    ],
+    owner: "qti",
+    header_libs: [
+        "generated_kernel_headers",
+    ],
+    export_include_dirs: ["."],
+}
 cc_library {
     name: "libgptutils.marlin",
     vendor: true,
@@ -26,6 +48,7 @@ cc_library {
     cflags: [
         "-Wall",
         "-Werror",
+        "-Wno-macro-redefined",
     ],
     srcs: [
         "gpt-utils.cpp",
