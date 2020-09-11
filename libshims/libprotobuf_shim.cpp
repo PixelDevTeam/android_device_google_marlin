@@ -9,7 +9,7 @@
 
 namespace android {
 
-std::string _ZN6google8protobuf8internal13empty_string_E(void *arg) {
+std::string _ZN6google8protobuf8internal13empty_string_E() {
     ALOGV("Hit shim! Now shimming protobuf");
 
     std::string new_string;
