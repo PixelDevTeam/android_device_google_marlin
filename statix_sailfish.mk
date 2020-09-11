@@ -27,7 +27,7 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit device specific makefiles
 $(call inherit-product, device/google/marlin/device-sailfish.mk)
-$(call inherit-product, vendor/google_devices/sailfish/sailfish-vendor.mk)
+$(call inherit-product, vendor/google/sailfish/sailfish-vendor.mk)
 
 # Device specific properties
 TARGET_BOOT_ANIMATION_RES := 1080

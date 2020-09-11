@@ -27,7 +27,7 @@ $(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit device specific makefiles
 $(call inherit-product, device/google/marlin/device-marlin.mk)
-$(call inherit-product, vendor/google_devices/marlin/marlin-vendor.mk)
+$(call inherit-product, vendor/google/marlin/marlin-vendor.mk)
 
 # Device specific properties
 TARGET_BOOT_ANIMATION_RES := 1440
