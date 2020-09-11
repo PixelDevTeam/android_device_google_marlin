@@ -28,7 +28,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit device specific makefiles
 $(call inherit-product, device/google/marlin/device-sailfish.mk)
-$(call inherit-product, vendor/google_devices/sailfish/sailfish-vendor.mk)
+$(call inherit-product, vendor/google/sailfish/sailfish-vendor.mk)
 
 PRODUCT_NAME := aosp_sailfish
 PRODUCT_DEVICE := sailfish
