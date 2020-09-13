@@ -122,10 +122,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_ROOT_EXTRA_FOLDERS := firmware firmware/radio persist
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
 
-BOARD_VENDOR_SEPOLICY_DIRS += device/google/marlin/sepolicy
-BOARD_VENDOR_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/google/marlin/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR := device/google/marlin/sepolicy/private
+BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy
 
 TARGET_FS_CONFIG_GEN := device/google/marlin/config.fs
 
