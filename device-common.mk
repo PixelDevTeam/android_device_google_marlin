@@ -29,6 +29,9 @@ VENDOR_SECURITY_PATCH := "2019-10-05"
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
+# Allow neverallows to move on
+SELINUX_IGNORE_NEVERALLOWS := true
+
 PRODUCT_SOONG_NAMESPACES += \
     device/google/marlin \
     vendor/google/camera \
