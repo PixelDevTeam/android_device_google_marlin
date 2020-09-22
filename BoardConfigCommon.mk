@@ -246,3 +246,6 @@ TARGET_RECOVERY_WIPE := device/google/marlin/recovery.wipe.common
 # SEPolicy
 # Manually set board SEPolicy version to fix init issues
 BOARD_SEPOLICY_VERS := 29.0
+
+# VNDK
+BOARD_VNDK_VERSION := current
