@@ -663,9 +663,6 @@ PRODUCT_PACKAGES_DEBUG += a_sns_test
 PRODUCT_PACKAGES += \
     libmm-qcamera
 
-# GoogleCamera
-$(call inherit-product, packages/apps/GoogleCamera/gcam.mk)
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.clearkey
