@@ -6,13 +6,7 @@
    {
       "repository":"vendor_google_marlin",
       "target_path":"vendor/google/marlin",
-      "branch":"ten",
+      "branch":"eleven",
       "remote": "pixel-devices-blobs"
-   },
-   {
-      "repository":"packages_apps_PixelLiveWallpaper",
-      "target_path":"packages/apps/PixelLiveWallpaper",
-      "branch":"ten",
-      "remote":"pixel-gitlab"
    }
 ]
