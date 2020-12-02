@@ -201,6 +201,9 @@ TARGET_USE_MDTP := true
 
 TARGET_BOARD_KERNEL_HEADERS := device/google/marlin/kernel-headers
 
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib64/mediadrm/libwvdrmengine.so|libprotobuf_shim.so
+
 # Install odex files into the other system image
 BOARD_USES_SYSTEM_OTHER_ODEX := true
 

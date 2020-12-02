@@ -183,6 +183,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Shims
+PRODUCT_PACKAGES += \
+    libprotobuf_shim
+
 # set audio fluence, ns, aec property
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluencepro \

@@ -1,0 +1,14 @@
+cc_library_shared {
+    name: "libprotobuf_shim",
+    proprietary: true,
+    vendor: true,    
+
+    srcs: [
+        "libprotobuf_shim.cpp",
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+}
