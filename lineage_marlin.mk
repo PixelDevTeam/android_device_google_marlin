@@ -21,22 +21,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common PixelExperience stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device specific makefiles
-$(call inherit-product, device/google/marlin/device-sailfish.mk)
-$(call inherit-product, vendor/google/sailfish/sailfish-vendor.mk)
+$(call inherit-product, device/google/marlin/device-marlin.mk)
+$(call inherit-product, vendor/google/marlin/marlin-vendor.mk)
 
-PRODUCT_NAME := aosp_sailfish
-PRODUCT_DEVICE := sailfish
+PRODUCT_NAME := lineage_marlin
+PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel
+PRODUCT_MODEL := Pixel XL
 PRODUCT_MANUFACTURER := Google
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
@@ -44,7 +38,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_GMS_CLIENTID_BASE := android-google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=sailfish \
-    PRIVATE_BUILD_DESC="sailfish-user 8.1.0 OPM1.171019.021 4565141 release-keys"
+    PRODUCT_NAME=marlin \
+    PRIVATE_BUILD_DESC="marlin-user 8.1.0 OPM1.171019.021 4565141 release-keys"
 
-BUILD_FINGERPRINT := google/sailfish/sailfish:8.1.0/OPM1.171019.021/4565141:user/release-keys
+BUILD_FINGERPRINT := google/marlin/marlin:8.1.0/OPM1.171019.021/4565141:user/release-key

@@ -35,6 +35,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 PRODUCT_SOONG_NAMESPACES += \
     device/google/marlin \
     vendor/google/camera \
+    hardware/google/interfaces \
     hardware/google/pixel
 
 PRODUCT_COPY_FILES += \
