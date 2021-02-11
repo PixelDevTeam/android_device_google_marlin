@@ -887,7 +887,7 @@ service vendor.theme_clear /vendor/bin/misc_writer --clear-dark-theme
 
 # Set the dark splash on init
 on init
-    start vendor.darkboot
+    start vendor.theme_set
 
 # Set the dark boot flag on dark mode (UiModeManager.MODE_NIGHT_YES == 2).
 #on property:persist.sys.theme=2
