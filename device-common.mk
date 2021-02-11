@@ -696,3 +696,7 @@ PRODUCT_PACKAGES += \
     performanced \
     virtual_touchpad \
     vr_hwc
+
+# Write flags to the vendor space in /misc partition.
+PRODUCT_PACKAGES += \
+    misc_writer
