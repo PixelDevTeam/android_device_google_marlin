@@ -876,12 +876,12 @@ on property:sys.vdso=32
    write /sys/module/vdso/parameters/enable_64 0
 
 # Write the dark theme magic to /misc partition.
-service vendor.theme_set /vendor/bin/misc_writer --set-dark-theme
+service vendor.theme_set /vendor/bin/misc_writer --override-vendor-space-offset 10814 --set-dark-theme
     disabled
     oneshot
 
 # Clear the dark theme magic in /misc partition.
-service vendor.theme_clear /vendor/bin/misc_writer --clear-dark-theme
+service vendor.theme_clear /vendor/bin/misc_writer --override-vendor-space-offset 10814 --clear-dark-theme
     disabled
     oneshot
 
